@@ -49,3 +49,16 @@ The following code demonstrates the usage of _printf:
 .fi
 
 
+This will output: "Hello, world!"
+.SH SEE ALSO
+.BR printf (3),
+.BR putchar (3),
+.BR man (7)
+.SH BUGS
+There are no known bugs in this function.
+.SH AUTHOR
+Written by Aydan Jafarli and Hamid Hamidbayli for Holbertonschool project.
+.SH COPYRIGHT
+This is free and unencumbered software released into the public domain.
+.SH NOTES
+This man page is for illustrative purposes and might need adjustments according to specific requirements and standards.
