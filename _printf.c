@@ -70,6 +70,8 @@ int _printf(const char *format, ...)
 
 				count += print_string(str);
 			}
+			else
+				count += print_char('%') + print_char(*format);
 		}
 		else
 			count += print_char(*format);
