@@ -6,7 +6,7 @@
  * This function mimics basic printf functionalities for %c (character) and
  * %s (string) specifiers, providing formatted output to stdout.
  *
- * Returns: Total characters printed on success; -1 for NULL format string
+ * Return: Total characters printed on success; -1 for NULL format string
  * or unsupported specifier.
  */
 
