@@ -1,10 +1,15 @@
 #include "main.h"
 /**
- * _printf - Custom printf function
- * @format: String with format specifiers
+ * _printf - Custom printf function for formatted output to stdout
+ * @format: Format string containing %c and %s specifiers
  *
- * Return: Number of characters printed
+ * This function mimics basic printf functionalities for %c (character) and
+ * %s (string) specifiers, providing formatted output to stdout.
+ *
+ * Returns: Total characters printed on success; -1 for NULL format string
+ * or unsupported specifier.
  */
+
 int _printf(const char *format, ...)
 {
 	int count = 0, c;
