@@ -1,40 +1,5 @@
 #include "main.h"
 /**
- * print_char - Helper function to print a character
- * @c: Character to be printed
- *
- * Return: Number of characters printed
- */
-int print_char(int c)
-{
-	_putchar(c);
-	return (1);
-}
-
-/**
- * print_string - Helper function to print a string
- * @str: String to be printed
- *
- * Return: Number of characters printed
- */
-int print_string(char *str)
-{
-	int count = 0;
-
-	if (str == NULL)
-		str = "(null)";
-
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str++;
-		count++;
-	}
-
-	return (count);
-}
-
-/**
  * _printf - Custom printf function
  * @format: String with format specifiers
  *
@@ -82,4 +47,3 @@ int _printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-
