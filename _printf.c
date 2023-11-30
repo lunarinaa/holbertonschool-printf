@@ -12,14 +12,12 @@
 
 int _printf(const char *format, ...)
 {
-	int count = 0, c;
+	int count = 0, c, num;
 	va_list args;
 
 	if (format == NULL)
 		return (-1);
-
 	va_start(args, format);
-
 	while (*format != '\0')
 	{
 		if (*format == '%')
@@ -40,15 +38,19 @@ int _printf(const char *format, ...)
 
 				count += print_string(str);
 			}
+			else if (*format == 'i' || *format == 'd')
+			{
+				num = va_arg(args, int);
+				count += print_integer(num);
+			}
 			else
 				count += print_char('%') + print_char(*format);
 		}
 		else
 			count += print_char(*format);
-
 		format++;
 	}
-
 	va_end(args);
 	return (count);
 }
+
