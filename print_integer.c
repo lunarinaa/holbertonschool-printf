@@ -9,6 +9,12 @@ int print_integer(int n)
 {
 	int count = 0;
 
+	if (n == INT_MIN)
+	{
+		count += print_string("-2147483648");
+		return (11);
+	}
+
 	if (n < 0)
 	{
 		count += print_char('-');
