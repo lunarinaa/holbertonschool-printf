@@ -18,16 +18,25 @@ In case of error or invalid format specifiers, it returns -1.
 
 .SH FORMAT SPECIFIERS
 The _printf function supports the following format specifiers:
-.RS
-.IP \fB%c\fR
-Prints a single character.
-.IP \fB%s\fR
-Prints a string.
-.IP \fB%i, %d\fR
-Prints integers.
-.IP \fB%%\fR
-Prints a '%' character.
-.RE
+.TP
+\fB%c\fR
+Char argument's flag.
+
+.TP
+\fB%s\fR
+String argument's flag.
+
+.TP
+\fB%i\fR
+Integer argument's flag.
+
+.TP
+\fB%d\fR
+Decimal argument's flag.
+
+.TP
+\fB%%\fR
+Prints '%'
 
 .SH EXAMPLES
 The following code demonstrates the usage of _printf:
